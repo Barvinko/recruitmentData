@@ -1,0 +1,68 @@
+/* Main SCSS file that imports all other files */
+
+// Import Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Base styles
+body {
+  min-height: 100vh;
+  position: relative;
+  color: $light;
+  background-color: $dark;
+
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/src/assets/images/bg-pattern.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    z-index: -2;
+  }
+}
+
+.page {
+  &__container {
+    min-height: calc(100vh - $header-height);
+    padding-top: calc(#{$header-height} + #{$spacer});
+    padding-bottom: $spacer * 2;
+  }
+
+  &__content {
+    background-color: $content-bg;
+    border-radius: 8px;
+    padding: $spacer * 2;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  &__title {
+    color: $primary;
+    margin-bottom: $spacer * 2;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+}
+
+.main-container {
+  position: relative;
+  z-index: 1;
+}
+
+// Components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/recruitment-example";
+@import "./components/image-gallery";
+@import "./components/recruitment-place";
+
+// Pages
+@import "./pages/home";
+@import "./pages/examples";
+@import "./pages/gallery";
+@import "./pages/places";

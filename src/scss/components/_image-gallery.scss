@@ -1,0 +1,93 @@
+/* Image gallery component styles */
+.image-gallery {
+  margin-bottom: $spacer * 2;
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: $spacer * 1.5;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+    border: 1px solid rgba($primary, 0.3);
+    transition:
+      transform 0.3s,
+      box-shadow 0.3s;
+    height: 200px;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+
+      .image-gallery__overlay {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba($darker, 0.8);
+    padding: $spacer;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $light;
+  }
+
+  &__description {
+    margin: $spacer/2 0 0;
+    font-size: 0.85rem;
+    color: rgba($light, 0.8);
+  }
+
+  &__copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba($darker, 0.7);
+    color: $light;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: $primary;
+    }
+  }
+
+  &__copy-success {
+    background-color: #28a745;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    animation: fadeOut 2s forwards;
+    z-index: 1000;
+  }
+}

@@ -1,0 +1,27 @@
+/* Gallery page styles */
+.gallery {
+  &__header {
+    margin-bottom: $spacer * 2;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $primary;
+    margin-bottom: $spacer;
+  }
+
+  &__description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+
+  &__instructions {
+    background-color: rgba($primary, 0.2);
+    border-left: 4px solid $primary;
+    padding: $spacer;
+    margin-bottom: $spacer * 2;
+    border-radius: 0 4px 4px 0;
+  }
+}

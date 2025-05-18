@@ -1,0 +1,56 @@
+.home {
+  &__content {
+    text-align: center;
+  }
+
+  &__logo {
+    max-width: 200px;
+    margin-bottom: $spacer * 2;
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    color: $primary;
+    margin-bottom: $spacer;
+  }
+
+  &__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: $spacer * 2;
+    color: rgba($light, 0.9);
+  }
+
+  &__description {
+    max-width: 800px;
+    margin: 0 auto $spacer * 2;
+    line-height: 1.6;
+  }
+
+  &__cta-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: $spacer;
+  }
+
+  &__cta-btn {
+    background-color: $primary;
+    color: $light;
+    text-decoration: none;
+    padding: $spacer $spacer * 2;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      background-color: lighten($primary, 10%);
+      color: $light;
+    }
+
+    &-icon {
+      margin-left: 0.5rem;
+    }
+  }
+}

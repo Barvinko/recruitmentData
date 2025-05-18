@@ -1,0 +1,87 @@
+/* Recruitment place component styles */
+.recruitment-place {
+  margin-bottom: $spacer * 3;
+
+  &__container {
+    background-color: rgba($secondary, 0.5);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid rgba($primary, 0.3);
+  }
+
+  &__header {
+    background-color: rgba($primary, 0.8);
+    padding: $spacer;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &__content {
+    padding: $spacer * 1.5;
+  }
+
+  &__description {
+    margin-bottom: $spacer * 1.5;
+    line-height: 1.6;
+  }
+
+  &__gallery {
+    margin-bottom: $spacer * 1.5;
+  }
+
+  &__gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: $spacer;
+  }
+
+  &__gallery-item {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    border: 1px solid rgba($light, 0.2);
+    height: 150px;
+  }
+
+  &__gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__tips {
+    background-color: rgba($darker, 0.5);
+    padding: $spacer;
+    border-radius: 4px;
+  }
+
+  &__tips-title {
+    font-size: 1.1rem;
+    margin-bottom: $spacer;
+    color: $primary;
+  }
+
+  &__tips-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+
+  &__tips-item {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    &::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: $primary;
+    }
+  }
+}

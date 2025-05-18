@@ -1,0 +1,60 @@
+/* Header component styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $darker;
+  z-index: 100;
+  border-bottom: 3px solid $primary;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $light;
+    text-decoration: none;
+
+    &:hover {
+      color: lighten($primary, 15%);
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+
+  &__link {
+    color: $light;
+    margin-left: $spacer;
+    text-decoration: none;
+    position: relative;
+    padding: 0.5rem 0.75rem;
+
+    &:hover {
+      color: lighten($primary, 15%);
+    }
+
+    &--active {
+      color: $primary;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+/* Examples page styles */
+.examples {
+  &__header {
+    margin-bottom: $spacer * 2;
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    color: $primary;
+    margin-bottom: $spacer;
+  }
+
+  &__description {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}

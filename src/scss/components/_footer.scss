@@ -1,0 +1,21 @@
+/* Footer component styles */
+.footer {
+  padding: $spacer 0;
+  background-color: $darker;
+  border-top: 1px solid rgba($primary, 0.5);
+  text-align: center;
+  margin-top: auto;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text {
+    color: rgba($light, 0.7);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
