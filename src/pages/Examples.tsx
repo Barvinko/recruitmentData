@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import RecruitmentExample from "../components/RecruitmentExample";
-import { recruitmentExamples } from "../data/mockData";
+import { recruitmentExamples } from "../data/recruitmentExamples";
 
 const Examples: React.FC = () => {
   return (

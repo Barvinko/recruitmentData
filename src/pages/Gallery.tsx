@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import ImageGallery from "../components/ImageGallery";
-import { galleryImages } from "../data/mockData";
+import { galleryImages } from "../data";
 import { FaInfoCircle } from "react-icons/fa";
 
 const Gallery: React.FC = () => {
