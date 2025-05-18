@@ -4,13 +4,13 @@ import type { GalleryImage } from "../types";
 export const galleryImages: GalleryImage[] = [
   {
     id: 1,
-    src: "./src/assets/images/gallery/KTE.jpg",
+    src: "./src/assets/images/gallery/KTE.png",
     alt: "KTE",
     description: "",
   },
   {
     id: 2,
-    src: "./src/assets/images/gallery/Targaryan.jpg",
+    src: "./src/assets/images/gallery/Targaryan.png",
     alt: "Targaryan",
     description: "",
   },
@@ -22,7 +22,7 @@ export const galleryImages: GalleryImage[] = [
   },
   {
     id: 4,
-    src: "./src/assets/images/gallery/battlePerep.jpg",
+    src: "./src/assets/images/gallery/battlePerep.png",
     alt: "Pereprachenck",
     description: "",
   },
