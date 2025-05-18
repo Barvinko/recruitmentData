@@ -8,13 +8,13 @@ export default defineConfig({
   base: "/bannerlord-recruiting-tutorial/", // This is important for gh-pages deployment
   resolve: {
     alias: {
-      "@scss": path.resolve(__dirname, "src/scss"),
+      "@src": path.resolve(__dirname, "src"),
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@import "@scss/variables.scss";`,
+        additionalData: `@import "@src/scss/variables.scss";`,
       },
     },
   },

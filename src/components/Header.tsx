@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         </NavLink>
         <nav className="header__nav">
           <NavLink
-            to="/"
+            to="//"
             className={({ isActive }) =>
               isActive ? "header__link header__link--active" : "header__link"
             }
