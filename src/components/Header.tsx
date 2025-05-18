@@ -7,12 +7,12 @@ const Header: React.FC = () => {
   return (
     <header className="header">
       <Container className="header__container">
-        <NavLink to="//" className="header__logo">
+        <NavLink to="/" className="header__logo">
           Bannerlord Recruiting
         </NavLink>
         <nav className="header__nav">
           <NavLink
-            to="//"
+            to="/"
             className={({ isActive }) =>
               isActive ? "header__link header__link--active" : "header__link"
             }

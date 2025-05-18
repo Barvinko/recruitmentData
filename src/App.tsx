@@ -10,7 +10,7 @@ import "./scss/main.scss";
 
 const App: React.FC = () => {
   return (
-    <Router basename="/bannerlord-recruiting-tutorial">
+    <Router>
       <div className="app">
         <Header />
         <main className="main-container">
