@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { FaClipboardList, FaImages, FaMapMarkedAlt } from "react-icons/fa";
+import Logo from "../assets/images/logo.png"; // Adjust the path as necessary
 
 const Home: React.FC = () => {
   return (
@@ -9,11 +10,7 @@ const Home: React.FC = () => {
       <Container>
         <div className="page__content">
           <div className="home__content">
-            <img
-              src="./src/assets/images/logo.png"
-              alt="Bannerlord Clan Logo"
-              className="home__logo"
-            />
+            <img src={Logo} alt="Grif" className="home__logo" />
             <h1 className="home__title">Bannerlord Recruiting Tutorial</h1>
             <p className="home__subtitle">
               A comprehensive guide for Steam recruitment into our Bannerlord

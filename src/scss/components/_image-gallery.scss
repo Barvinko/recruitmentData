@@ -90,4 +90,14 @@
     animation: fadeOut 2s forwards;
     z-index: 1000;
   }
+  &__copy-error {
+    background-color: #a72828;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    animation: fadeOut 2s forwards;
+    z-index: 1000;
+  }
 }
