@@ -4,53 +4,72 @@ import type { RecruitmentExample } from "../types";
 export const recruitmentExamples: RecruitmentExample[] = [
   {
     id: 1,
-    title: "Steam Direct Message Example",
+    title: "Game Forum Post Example",
     text: [
-      `Hey there! I noticed you play Mount & Blade II: Bannerlord. Our clan is looking for new members who enjoy the game. We have regular events, friendly community, and help each other improve.`,
-      `Would you be interested in joining us? We'd love to have you!`,
-      `Here's our Discord link: [Your Discord Link]`,
-      `Feel free to ask any questions. Hope to see you there!`,
+      {
+        row: `Приветствую! Видел что играешь в Bannerlord, хотел узнать играешь ты только в одиночку или и в мультиплеер ещё?`,
+        copy: true,
+      },
+      { row: `привет! я только в одиночку играю` },
+      {
+        row: `А хотел бы сыграть в мультиплейер полноценно с клановыми боями?`,
+        copy: true,
+      },
+      {
+        row: `не знаю насчёт мультиплеера, у меня одиночная то лагает, комп не особо тянет, да и желания такого пока нет
+но идея хорошая, я подумаю`,
+      },
+      {
+        row: `Так пробывать можно,не понравиться уйти
+Вот смотри мы участвуем в масштабных битвах, сотни на сотни, боях между кланами, на отдельных серверах и модулях.[картинка KTE]`,
+        copy: true,
+      },
+      { row: `ого, мощно` },
+      { row: `Так что интересно?`, copy: true },
+      {
+        row: `прикольно там что, моды?
+      да интересно`,
+      },
+      {
+        row: `KTE - Это специалный модуль для MP, есть разные например BRE по Вархамеру именно для MP. Это модуль который был на скрине, где мы сражались[cылка на KTE]
+https://steamcommunity.com/sharedfiles/filedetails/?id=3373217829`,
+        copy: true,
+      },
     ],
   },
   {
     id: 2,
-    title: "Game Forum Post Example",
+    title: "Steam Direct Message Example",
     text: [
-      `[RECRUITING] The Banner Warriors - Active Bannerlord Clan
-
-We are an active clan focused on both PvE and PvP content in Bannerlord. Our members range from new players to veterans with hundreds of hours.
-
-What we offer:
-• Regular clan battles and events
-• Friendly community willing to help
-• Strategy discussions and gameplay tips
-• Organized command structure with advancement opportunities
-
-Requirements:
-• Age 17+
-• Microphone for communication
-• Willingness to participate in clan events
-• Basic understanding of the game
-
-Interested? Join our Discord: [Your Discord Link]
-Or message me directly on Steam: [Your Steam ID]`,
-    ],
-  },
-  {
-    id: 3,
-    title: "In-Game Recruitment Message",
-    text: [
-      `Looking for a clan? The Banner Warriors are recruiting!
-
-We're a community-focused clan with regular events and a friendly atmosphere. Whether you're new to the game or a seasoned veteran, we have a place for you.
-
-Benefits:
-- Team-based gameplay
-- Strategy sharing
-- Regular events
-- Active Discord
-
-Message me for details or join our Discord: [Your Discord Link]`,
+      {
+        row: `Приветствую! Видел твой обзор на Bannerlord, хотел узнать играешь ты только в одиночку или и в мультиплеер ещё?`,
+        copy: true,
+      },
+      { row: `Пока что только в одиночку` },
+      {
+        row: `А хотел бы поучаствовать в массовых битвах сотни на сотни, между множества кланов?[картинка KTE].
+А почему не хочешь?`,
+        copy: true,
+      },
+      { row: `Не фанат онлайн игр` },
+      {
+        row: `Это не тот опыт онлайн игр как CS или Dota. Здесь организованные бои в командном строю.Почему именно не фант мультиплеера?`,
+        copy: true,
+      },
+      {
+        row: `Я больше люблю руководить отрядами чем просто кого то слушать и играть по их приказам. Вот что ты мне скинул скрин этими парнями полюбому кто то командует`,
+      },
+      {
+        row: `Если изявишь желание научиться командовать отрядами из живых людей, то такую возможность предоставим. Командиры всегда нужны`,
+        copy: true,
+      },
+      {
+        row: `Вот представь сейчас сколько у вас командировать в команде если предоставить им такую возможность там скорее всего все эти люди либо командиры отряда либо правители уже кем там командовать`,
+      },
+      {
+        row: `На каждую битву, если изявишь желание тебе дадут командовать битвой с массовых, и в битве клан на клан`,
+        copy: true,
+      },
     ],
   },
 ];

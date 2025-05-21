@@ -21,10 +21,16 @@ const RecruitmentExample: React.FC<RecruitmentExampleProps> = ({ example }) => {
       <div className="recruitment-example__content">
         <div className="recruitment-example__text">
           {example.text.map((textRow, index) => (
-            <div className="recruitment-example__row" key={index}>
-              <p className="recruitment-example__row-text">{textRow}</p>
-              {index % 2 === 0 && (
-                <CopyToClipboard text={example.text[index]} onCopy={handleCopy}>
+            <div
+              className={`recruitment-example__row ${!example.text[index].copy && "recruitment-example__row_answer"}`}
+              key={index}
+            >
+              <p className="recruitment-example__row-text">{textRow.row}</p>
+              {example.text[index].copy && (
+                <CopyToClipboard
+                  text={example.text[index].row}
+                  onCopy={handleCopy}
+                >
                   <button className="recruitment-example__copy-btn">
                     <FaCopy className="recruitment-example__copy-btn-icon" />
                   </button>

@@ -1,7 +1,11 @@
+export interface RecruitmentExampleText {
+  row: string;
+  copy?: boolean;
+}
 export interface RecruitmentExample {
   id: number;
   title: string;
-  text: string[];
+  text: RecruitmentExampleText[];
   image?: string;
 }
 

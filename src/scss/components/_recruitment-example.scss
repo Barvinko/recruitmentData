@@ -49,10 +49,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
 
-    &:nth-child(even) {
+    &_answer {
       justify-content: flex-end;
       color: #9b9b9b;
+      text-align: end;
+    }
+
+    &-text {
+      margin: 0;
     }
   }
 
