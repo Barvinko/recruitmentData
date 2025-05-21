@@ -45,6 +45,17 @@
     }
   }
 
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+      color: #9b9b9b;
+    }
+  }
+
   &__image-container {
     width: 100%;
     max-width: 300px;
@@ -64,6 +75,8 @@
   }
 
   &__copy-btn {
+    width: min-content;
+    height: min-content;
     background-color: darken($primary, 10%);
     color: $light;
     border: none;
@@ -76,10 +89,6 @@
 
     &:hover {
       background-color: $primary;
-    }
-
-    &-icon {
-      margin-right: 0.5rem;
     }
   }
 

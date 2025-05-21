@@ -17,17 +17,22 @@ const RecruitmentExample: React.FC<RecruitmentExampleProps> = ({ example }) => {
 
   return (
     <div className="recruitment-example">
-      <div className="recruitment-example__header">
-        <h3 className="recruitment-example__title">{example.title}</h3>
-        <CopyToClipboard text={example.text} onCopy={handleCopy}>
-          <button className="recruitment-example__copy-btn">
-            <FaCopy className="recruitment-example__copy-btn-icon" />
-            Copy Text
-          </button>
-        </CopyToClipboard>
-      </div>
+      <div className="recruitment-example__header"></div>
       <div className="recruitment-example__content">
-        <div className="recruitment-example__text">{example.text}</div>
+        <div className="recruitment-example__text">
+          {example.text.map((textRow, index) => (
+            <div className="recruitment-example__row" key={index}>
+              <p className="recruitment-example__row-text">{textRow}</p>
+              {index % 2 === 0 && (
+                <CopyToClipboard text={example.text[index]} onCopy={handleCopy}>
+                  <button className="recruitment-example__copy-btn">
+                    <FaCopy className="recruitment-example__copy-btn-icon" />
+                  </button>
+                </CopyToClipboard>
+              )}
+            </div>
+          ))}
+        </div>
         {example.image && (
           <div className="recruitment-example__image-container">
             <img

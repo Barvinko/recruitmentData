@@ -1,7 +1,7 @@
 export interface RecruitmentExample {
   id: number;
   title: string;
-  text: string;
+  text: string[];
   image?: string;
 }
 
