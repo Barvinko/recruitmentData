@@ -9,12 +9,9 @@ const Places: React.FC = () => {
       <Container>
         <div className="page__content">
           <div className="places__header">
-            <h1 className="places__title">Recruitment Places</h1>
+            <h1 className="places__title">Места</h1>
             <p className="places__description">
-              This section provides information about the best places to find
-              and recruit potential clan members. Each method includes tips,
-              examples, and step-by-step instructions to maximize your
-              recruitment efforts.
+              В этом разделе представлена ​​информация о местах для вербовки.
             </p>
           </div>
 

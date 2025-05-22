@@ -38,6 +38,7 @@
     text-decoration: none;
     position: relative;
     padding: 0.5rem 0.75rem;
+    font-weight: 700;
 
     &:hover {
       color: lighten($primary, 15%);

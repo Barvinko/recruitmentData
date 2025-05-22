@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import RecruitmentExample from "../components/RecruitmentExample";
 import { recruitmentExamples } from "../data/recruitmentExamples";
+import { FaCopy } from "react-icons/fa";
 
 const Examples: React.FC = () => {
   return (
@@ -9,13 +10,14 @@ const Examples: React.FC = () => {
       <Container>
         <div className="page__content">
           <div className="examples__header">
-            <h1 className="examples__title">Recruitment Examples</h1>
+            <h1 className="examples__title">Примеры</h1>
             <p className="examples__description">
-              Below you'll find various recruitment message templates that you
-              can use when reaching out to potential clan members. Feel free to
-              modify these examples to fit your personal style, but keep the
-              core information intact. Click the "Copy Text" button to copy a
-              message to your clipboard.
+              Ниже вы найдете различные шаблоны сообщений о наборе, которые вы
+              можете использовать при обращении к потенциальным членам клана. Не
+              стесняйтесь изменять эти примеры в соответствии с вашим личным
+              стилем, но сохраняйте основную информацию нетронутой. Нажмите
+              кнопку «<FaCopy className="recruitment-example__copy-btn-icon" />
+              », чтобы скопировать сообщение в буфер обмена.
             </p>
           </div>
 

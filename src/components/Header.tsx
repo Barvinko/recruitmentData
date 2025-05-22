@@ -8,7 +8,7 @@ const Header: React.FC = () => {
     <header className="header">
       <Container className="header__container">
         <NavLink to="/" className="header__logo">
-          Bannerlord Recruiting
+          M&B Recruiting
         </NavLink>
         <nav className="header__nav">
           <NavLink
@@ -18,7 +18,7 @@ const Header: React.FC = () => {
             }
             end
           >
-            Home
+            Главная
           </NavLink>
           <NavLink
             to="/examples"
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               isActive ? "header__link header__link--active" : "header__link"
             }
           >
-            Recruiting Examples
+            Примеры
           </NavLink>
           <NavLink
             to="/gallery"
@@ -34,7 +34,7 @@ const Header: React.FC = () => {
               isActive ? "header__link header__link--active" : "header__link"
             }
           >
-            Image Gallery
+            Галерея
           </NavLink>
           <NavLink
             to="/places"
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
               isActive ? "header__link header__link--active" : "header__link"
             }
           >
-            Recruiting Places
+            Места
           </NavLink>
         </nav>
       </Container>

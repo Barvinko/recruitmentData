@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import ImageGallery from "../components/ImageGallery";
 import { galleryImages } from "../data";
-import { FaInfoCircle } from "react-icons/fa";
+import { FaCopy } from "react-icons/fa";
 
 const Gallery: React.FC = () => {
   return (
@@ -10,20 +10,14 @@ const Gallery: React.FC = () => {
       <Container>
         <div className="page__content">
           <div className="gallery__header">
-            <h1 className="gallery__title">Image Gallery</h1>
+            <h1 className="gallery__title">Галерея</h1>
             <p className="gallery__description">
-              Below you'll find a collection of images that you can use in your
-              recruitment messages. These include clan banners, gameplay
-              screenshots, and event highlights. Click on an image to copy its
-              URL to your clipboard.
-            </p>
-          </div>
-
-          <div className="gallery__instructions">
-            <p>
-              <FaInfoCircle /> Click on any image to copy its URL to your
-              clipboard. You can then paste this URL in your Steam messages or
-              forum posts.
+              Ниже вы найдете коллекцию изображений, которые вы можете
+              использовать в своих сообщениях о наборе. Они включают скриншоты
+              игрового процесса публичных мероприятий и единоличные
+              противостояния. Нажмите на изображение на «
+              <FaCopy className="recruitment-example__copy-btn-icon" />» чтобы
+              скопировать картинку в буфер обмена.
             </p>
           </div>
 
