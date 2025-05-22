@@ -35,7 +35,7 @@
 
   &__gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    // grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: $spacer;
   }
 
@@ -44,13 +44,15 @@
     border-radius: 4px;
     overflow: hidden;
     border: 1px solid rgba($light, 0.2);
-    height: 150px;
+    max-height: 800px;
+
+    display: flex;
   }
 
   &__gallery-image {
-    width: 100%;
+    max-width: 100%;
+    margin: auto;
     height: 100%;
-    object-fit: cover;
   }
 
   &__tips {

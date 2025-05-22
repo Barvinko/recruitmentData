@@ -32,7 +32,7 @@ const RecruitmentPlace: React.FC<RecruitmentPlaceProps> = ({ place }) => {
           </div>
 
           <div className="recruitment-place__tips">
-            <h4 className="recruitment-place__tips-title">Tips & Tricks</h4>
+            <h4 className="recruitment-place__tips-title">Extra</h4>
             <ul className="recruitment-place__tips-list">
               {place.tips.map((tip, index) => (
                 <li key={index} className="recruitment-place__tips-item">

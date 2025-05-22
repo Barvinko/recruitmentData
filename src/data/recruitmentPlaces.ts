@@ -1,80 +1,120 @@
 import type { RecruitmentPlace } from "../types";
+import Reviews from "../assets/images/place/Reviews.png";
+import Screenshots from "../assets/images/place/Screenshots.png";
+import Discussion from "../assets/images/place/Discussion.png";
+import BannerlordMP from "../assets/images/place/BannerlordMP.png";
+import Discord from "../assets/images/place/Discord.png";
+import Manuals from "../assets/images/place/Manuals.png";
+import Modules from "../assets/images/place/Modules.png";
+import ModulesCom from "../assets/images/place/ModulesCom.png";
+import ScreenshotLocal from "../assets/images/place/ScreenshotLocal.png";
 
 // Mock data for recruitment places
 export const recruitmentPlaces: RecruitmentPlace[] = [
   {
     id: 1,
-    title: "Steam Discussions",
+    title: "Steam: Обзоры",
     description:
-      "Steam discussion forums are a great place to find interested players. Look for threads where people are discussing clans or seeking groups to join.",
+      "Сортировать по недавним и по языку, и отправлять приглашение тем кто недавно написал обзор.",
     images: [
       {
         id: 101,
-        src: "/src/assets/images/steam-discussions.jpg",
-        alt: "Steam Discussions Page",
-      },
-      {
-        id: 102,
-        src: "/src/assets/images/steam-discussions-post.jpg",
-        alt: "Example of a Steam Discussion Post",
+        src: Reviews,
+        alt: "Reviews",
       },
     ],
-    tips: [
-      "Create a detailed post with information about your clan and what you offer",
-      "Respond quickly to comments and questions",
-      "Include screenshots of clan activities",
-      "Bump your post regularly (but not too often to avoid spam)",
-      "Be friendly and helpful to potential recruits",
-    ],
+    tips: [],
   },
   {
     id: 2,
-    title: "Game Reviews",
+    title: "Steam: Скриншоты",
     description:
-      "Look for positive reviews of Bannerlord on Steam where players seem enthusiastic about the game. These players are more likely to be interested in joining a clan.",
+      "Выбираем недавние в Скриншотах и ищем русскоязычные никнеймы, подписи у скриншотах, и присутствие русской локализации на скриншотах",
     images: [
       {
         id: 201,
-        src: "/src/assets/images/steam-reviews.jpg",
-        alt: "Steam Reviews Page",
+        src: Screenshots,
+        alt: "Screenshots",
       },
       {
-        id: 202,
-        src: "/src/assets/images/positive-review.jpg",
-        alt: "Example of a Positive Review",
+        id: 301,
+        src: ScreenshotLocal,
+        alt: "ScreenshotLocal",
       },
     ],
-    tips: [
-      "Focus on contacting players with many hours in the game",
-      "Personalize your message based on what they wrote in their review",
-      "Mention specific aspects of your clan that might interest them",
-      "Don't be pushy - offer information and let them decide",
-      "Follow up only once if they don't respond",
-    ],
+    tips: [],
   },
   {
     id: 3,
-    title: "In-Game Recruitment",
+    title: "Steam: Обсуждение",
     description:
-      "Recruiting directly in-game can be effective, especially during or after multiplayer matches where you've played well together.",
+      "Выбирать RU-форум, и заходить в обсуждение начиная с верхних, и добавлять в друзья недавних коментаторов",
     images: [
       {
         id: 301,
-        src: "/src/assets/images/in-game-chat.jpg",
-        alt: "In-Game Chat",
+        src: Discussion,
+        alt: "Discussion",
+      },
+    ],
+    tips: [],
+  },
+  {
+    id: 4,
+    title: "BannerlordMP",
+    description:
+      "Смотрим по никам в стиме(или через сам банер) [НЕ ПОЛЬЗОВАЛСЯ]",
+    images: [
+      {
+        id: 401,
+        src: BannerlordMP,
+        alt: "BannerlordMP",
+      },
+    ],
+    tips: [],
+  },
+  {
+    id: 5,
+    title: "Discord",
+    description:
+      "Ищем на разных серверах по русским никнеймам, кирилица русские слова латиницей [НЕ ПОЛЬЗОВАЛСЯ]",
+    images: [
+      {
+        id: 501,
+        src: Discord,
+        alt: "Discord",
+      },
+    ],
+    tips: [`https://discord.gg/ZRRS7q4g`],
+  },
+  {
+    id: 6,
+    title: "Steam: Руководство",
+    description: "приглашать в друзья писателей руководств и комментаторов",
+    images: [
+      {
+        id: 601,
+        src: Manuals,
+        alt: "Manuals",
+      },
+    ],
+    tips: [],
+  },
+  {
+    id: 7,
+    title: "Steam: Модули",
+    description: "Приглашать комментаторов",
+    images: [
+      {
+        id: 701,
+        src: Modules,
+        alt: "Modules",
       },
       {
-        id: 302,
-        src: "/src/assets/images/post-match-screen.jpg",
-        alt: "Post-Match Screen",
+        id: 702,
+        src: ModulesCom,
+        alt: "ModulesCom",
       },
     ],
-    tips: [
-      "Be respectful and don't spam the chat",
-      "Target players who showed good teamwork or skill",
-      "Invite players to a Discord voice chat for a trial run",
-      "Share your clan's focus (PvP, roleplay, etc.) to attract like-minded players",
-      "Organize public events where non-members can participate",
-    ],
+    tips: [],
   },
 ];
