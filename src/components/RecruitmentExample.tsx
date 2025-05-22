@@ -17,7 +17,11 @@ const RecruitmentExample: React.FC<RecruitmentExampleProps> = ({ example }) => {
 
   return (
     <div className="recruitment-example">
-      <div className="recruitment-example__header"></div>
+      <div className="recruitment-example__header">
+        {example.title && (
+          <h3 className="recruitment-example__title">{example.title}</h3>
+        )}
+      </div>
       <div className="recruitment-example__content">
         <div className="recruitment-example__text">
           {example.text.map((textRow, index) => (

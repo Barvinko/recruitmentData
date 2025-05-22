@@ -4,8 +4,8 @@ export interface RecruitmentExampleText {
 }
 export interface RecruitmentExample {
   id: number;
-  title: string;
   text: RecruitmentExampleText[];
+  title?: string;
   image?: string;
 }
 
